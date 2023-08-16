@@ -1,3 +1,10 @@
+/* Estamos zerando todas as configurações padrões de margin e padding do navegador para utilizarmos as nossas*/ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -11,6 +18,12 @@ body {
   /* background: color image repeat position/size */
 
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+/* adicionando a fonte para todo o body*/
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
 }
 
 /*Container é a caixa maior da imagem do projeto, onde contem a parte pricnipal do projeto, como imagens, links e etc*/
@@ -37,4 +50,9 @@ Ou conforme abaixo, criando o text-align*/
 
 #profile img {
   width: 112px;
+}
+
+#profile p {
+  font-weight: 400;
+  line-height: 24px;
 }
