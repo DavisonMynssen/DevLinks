@@ -1,3 +1,40 @@
 body {
+  /*
   background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+
+  /*Outra alternativa seria abaixo, na qual é uma maneira mais curta e resumida para inserir o background */
+
+  /* background: color image repeat position/size */
+
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+/*Container é a caixa maior da imagem do projeto, onde contem a parte pricnipal do projeto, como imagens, links e etc*/
+#container {
+  border: 1px solid red;
+  width: 360px;
+  /*height: 712px; não precisa ter altura, uma vez que o tamanho irá acompanhar o conteúdo que há na caixa*/
+  /*margin-right: auto;
+  margin-left: auto;*/
+  margin: auto;
+}
+
+/* a html <img> é uma html inline, sendo assim, para utilizar o margin auto, terá que colocar display block
+#profile img{
+  width: 112px;
+  margin: auto;
+  display: block;
+}
+Ou conforme abaixo, criando o text-align*/
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
 }
